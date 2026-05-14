@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyInvoice - Rechnungssoftware für Kleinunternehmer</title>
+   <link rel="stylesheet" href="css/pico-main/css/pico.min.css">
+    <style>
+        :root {
+                --primary: #10b981;
+                --primary-hover: #059669;
+                --primary-inverse: #FFF; 
+            }
+        .hero { padding: 3rem 0; text-align: center; }
+        .price-card { border: 1px solid #b8b8b8; padding: 5%; border-radius: 8px; }
 
+        button, .primary {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: var(--primary-inverse);
+        }
+
+        a {
+            color: var(--primary);
+        }
+    </style>
+</head> 
+<body>
+
+    <nav class="container">
+        <ul>
+            <li><strong>EasyInvoice</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="about.html">Über Uns</a></li>
+            <li><a href="license.html">Lizenz</a></li>
+            <li><a href="impressum.html">Kontakt/Impressum</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Rechnungen schreiben in unter 60 Sekunden.</h1>
+            <p>Die Software für Kleinunternehmer in Österreicher.</p>
+            <button>Jetzt kostenlos testen</button>
+        </section>
+
+        <hr>
+
+        <section id="pricing">
+            <div class="grid">
+                <article class="price-card">
+                    <h3>Free-Version</h3>
+                    <p>Ideal für Freelancer</p>
+                    <ul>
+                        <li>1 Nutzer</li>
+                        <li>Max. 3 Rechnungen / Monat</li>
+                        <li>Lokale Datenspeicherung</li>
+                    </ul>
+                    <a href="#" role="button" class="secondary">Download</a>
+                </article>
+
+                <article class="price-card">
+                    <h3>Pro-Version</h3>
+                    <p>Für Kleinunternehmer</p>
+                    <ul>
+                        <li>Unbegrenzt Rechnungen</li>
+                        <li>Automatisches Mahnungs-System</li>
+                        <li>Support</li>
+                    </ul>
+                    <a href="#" role="button" class="primary">Kaufen für 9,90 € / Monat</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <small>
+            <a href="datenschutz.html">Datenschutz</a> • 
+            <a href="impressum.html">Impressum</a> • 
+            © 2026 EasyInvoice GmbH
+        </small>
+    </footer>
+
+</body>
+</html>
