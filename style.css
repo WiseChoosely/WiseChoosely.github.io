@@ -1,0 +1,22 @@
+:root {
+    --primary: #0d9488;
+    --primary-inverse: #FFF; 
+    --secondary: #1e293b
+     }
+.hero { padding: 3rem 0; text-align: center; }
+.price-card { border: 1px solid #b8b8b8; padding: 5%; border-radius: 8px; }
+
+button, .primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: var(--primary-inverse);
+}
+button, .secondary{
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    color: var(--primary-inverse);
+}
+
+a {
+    color: var(--primary);
+}
