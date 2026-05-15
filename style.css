@@ -1,17 +1,55 @@
 :root {
     --primary: #0d9488;
-    --primary-inverse: #FFF; 
+    --primary-inverse: #FFF;
     --secondary: #1e293b
-     }
-.hero { padding: 3rem 0; text-align: center; }
-.price-card { border: 1px solid #b8b8b8; padding: 5%; border-radius: 8px; }
+}
 
-button, .primary {
+.hero {
+    position: relative;
+    padding: 6rem 1rem;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    background-color: var(--secondary);
+    
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background-image: url('assets/Bild_Startseite_firmbee-office-620822_1920.jpg'); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    transform: scale(1.1);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.hero .container{
+    position: relative;
+    z-index: 2;
+}
+
+.price-card {
+    border: 1px solid var(--secondary);
+    padding: 5%;
+    border-radius: 8px;
+}
+
+button,
+.primary {
     background-color: var(--primary);
     border-color: var(--primary);
     color: var(--primary-inverse);
 }
-button, .secondary{
+
+button,
+.secondary {
     background-color: var(--secondary);
     border-color: var(--secondary);
     color: var(--primary-inverse);
@@ -21,20 +59,28 @@ a {
     color: var(--primary);
 }
 
-.marken-wrapper{
+.marken-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 200px;
     margin-bottom: 1rem;
+
 }
 
 :focus {
     outline: 4px solid var(--secondary) !important;
-    outline-offset: 4px;
+    
 }
 
 body {
     line-height: 1.6;
     font-size: 1.1rem;
+}
+
+#branding article {
+    border: 1px solid var(--secondary); 
+    border-radius: 5px;
+    padding: 1.5rem;
+    background-color: #ffffff;
 }
