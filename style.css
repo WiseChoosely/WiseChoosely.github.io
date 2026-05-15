@@ -20,3 +20,21 @@ button, .secondary{
 a {
     color: var(--primary);
 }
+
+.marken-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+:focus {
+    outline: 4px solid var(--secondary) !important;
+    outline-offset: 4px;
+}
+
+body {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
